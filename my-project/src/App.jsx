@@ -1,5 +1,6 @@
 import { useState } from "react"
 import star from "../src/assets/icon-star.svg"
+import thankYou from "../src/assets/illustration-thank-you.svg"
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <main className="w-scren h-screen flex justify-center items-center">
       <div className="h-2/3 w-3/5 flex justify-center items-center">
-        <div className="h-full w-1/2 bg-black rounded-3xl p-10 flex flex-col justify-start gap-7">
+        <div className={`h-full w-1/2 bg-black rounded-3xl p-10 flex flex-col items-${!submitted ? "start" : "center"} gap-5`}>
           {
             !submitted ? (
               <>
@@ -38,6 +39,10 @@ function App() {
             ) :
             (
               <>
+              <img src={thankYou} alt="an illustration image" />
+              <div className="py-1 px-4 rounded-2xl bg-slate-500">You selected 4 out of 5</div>
+              <h1 className="text-white">Thank you!</h1>
+              <p className="text-white text-center">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
               </>
             )
           }
