@@ -5,6 +5,10 @@ function App() {
 
   const [value, setValue] = useState(null);
   const [submitted, SetSubmitted] = useState(null); 
+  const handleClick = (e) => {
+    e.preventDefault();
+    SetSubmitted(value);
+  }
   console.log(value);
   console.log(submitted);
 
@@ -27,7 +31,7 @@ function App() {
                   <button className="w-12 rounded-full h-12 bg-white flex justify-center items-center outline-none" value="4" onClick={() => setValue("4")}>4</button> 
                   <button className="w-12 rounded-full h-12 bg-white flex justify-center items-center outline-none" value="5" onClick={() => setValue("5")}>5</button> 
                 </div>
-                <button className="p-3 bg-orange-500 rounded-3xl" onClick={() => SetSubmitted(value)}>
+                <button className="p-3 bg-orange-500 rounded-3xl" onClick={handleClick}>
                   <h3 className="text-white" >SUBMIT</h3>
                 </button>
               </>
