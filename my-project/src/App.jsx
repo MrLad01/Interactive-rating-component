@@ -15,8 +15,8 @@ function App() {
 
   return (
     <main className="w-scren h-screen flex justify-center items-center">
-      <div className="h-2/3 w-3/5 flex justify-center items-center">
-        <div className={`h-full w-1/2 bg-black rounded-3xl p-10 flex flex-col items-${!submitted ? "start" : "center"} gap-5`}>
+      <div className="h-2/3 w-3/5 flex justify-center items-center xs:max-lg:scale-90 xs:max-sm:w-full lg:scale-90">
+        <div className={`h-full w-1/2 xs:max-lg:h-2/3  xs:max-lg:w-4/5 bg-black rounded-3xl p-10 xs:p-5 sm:p-6 md:p-8 flex flex-col items-${!submitted ? "start" : "center"} gap-5 xs:gap-2 sm:gap-3 md-gap-4`}>
           {
             !submitted ? (
               <>
