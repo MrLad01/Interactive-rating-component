@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/MrLad01/Interactive-rating-component/tree/main/my-project)
-- Live Site URL: [](https://mrlad01-interactive-rating-component.netlify.app/)
+- Solution URL: [https://github.com/MrLad01/Interactive-rating-component/tree/main/my-project](https://github.com/MrLad01/Interactive-rating-component/tree/main/my-project)
+- Live Site URL: [https://mrlad01-interactive-rating-component.netlify.app/](https://mrlad01-interactive-rating-component.netlify.app/)
 
 ## My process
 
